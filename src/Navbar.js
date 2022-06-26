@@ -98,11 +98,17 @@ function Navbar() {
                 Blog
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mb-2">
               <a className="nav-link text-black" href="#">
                 Pricing
               </a>
             </li>
+            <ul className="d-flex flex-column align-items-start ms-0 pl-0">
+            <Button variant="outlined" style={{borderColor: "#fff", color: "#fff", marginBottom: "20px"}}>Sign In</Button>
+            <Button variant="contained" style={{backgroundColor: "white"}}>Start Free</Button>
+
+            </ul>
+
           </ul>
         </nav>
       </aside>

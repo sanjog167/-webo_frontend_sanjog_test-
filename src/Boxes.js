@@ -16,7 +16,7 @@ function Boxes() {
   return (
     <section>
       <div className="container">
-        <div className="row">
+        <div className="row gy-4">
           <BoxData
             title="Connect wallets & companies"
             image={icon1}

@@ -17,7 +17,7 @@ function ScrollTop() {
     }
 
   return (
-    <div className={"scrolltop " + (scrollTop ? "gotop" : '')} onClick={goToTop}><i className="fa fa-chevron-up" ></i></div>
+    <div className={"scrolltop z-9 " + (scrollTop ? "gotop" : '')} onClick={goToTop}><i className="fa fa-chevron-up" ></i></div>
   )
 }
 

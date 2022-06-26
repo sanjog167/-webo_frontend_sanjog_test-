@@ -60,7 +60,7 @@ function Banner()
             </div>
           </div>
         </div>
-        <div className="blob">
+        <div className="blob w-sm-60 h-sm-60">
           <img src={blob} alt="blob" />
         </div>
       </div>
