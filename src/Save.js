@@ -26,7 +26,7 @@ function Save() {
   }, []);
 
   return (
-    <section>
+    <section className='saveSection'>
     <div className="container">
       <div className="row">
         <div className="col-lg-6 payment__Section m-auto">

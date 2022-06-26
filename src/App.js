@@ -3,11 +3,12 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import Navbar from "./Navbar";
-import "./style.css";
+import "./style.scss";
 import Body from "./Body";
 import Footer from "./Footer";
 import React, { useState, useEffect } from "react";
 import Switch from "@mui/material/Switch";
+import ScrollTop from "./ScrollTop";
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       setScroll(window.scrollY > 50);
     });
   }, []);
+
+
 
   const [DayToggle, setDayToggle] = useState(false);
 
@@ -36,6 +39,7 @@ function App() {
 
       <Body />
       <Footer />
+      <ScrollTop/>
     </div>
   );
 }

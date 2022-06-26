@@ -16,7 +16,7 @@ function Banner()
         <div className="container">
           <div className="row">
             <div className="col-lg-6 m-auto">
-              <div className="mainBanner__left">
+              <div className="mainBanner__left pt-3">
                 <h1 className="text-start fw-800">
                   {''}
                 
@@ -36,7 +36,7 @@ function Banner()
                   Yet bed any for travelling assistance indulgence unpleasing.
                   Not thoughts all exercise blessing.{" "}
                 </p>
-                <div className="d-flex align-items-center mt-5">
+                <div className="d-flex align-items-center mt-5 flex-column-sm">
                 <Button variant="contained" >Get Started</Button>
                 <a href="#" className="play-now d-flex align-items-center"><i className="fa fa-play icon" aria-hidden="true"></i><span className="ripple"></span>  See How It Works</a>             
 
@@ -54,7 +54,7 @@ function Banner()
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="mainBanner__right">
+              <div className="mainBanner__right h-790">
                 <img src={bannerImage} alt="bannerImage" />
               </div>
             </div>

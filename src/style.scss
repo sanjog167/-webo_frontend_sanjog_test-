@@ -1,16 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+$brand-color:#3734A9;
 
 body{
     font-family: 'Manrope', sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 h1{
@@ -39,7 +43,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 a{
     text-decoration: none;
-    color: #3734A9;
+    color: $brand-color;
 }
 
 ul{
@@ -212,7 +216,13 @@ padding: 50px 0;
     height: 65px;
 }
 
+.overflow-hidden{
+    overflow: hidden;
+}
 
+.align-items-start{
+    align-items: start;
+}
 
 hr{
     height: 2px !important;
@@ -243,7 +253,7 @@ border-radius: 10px;
 
 .MuiButton-contained{
     padding: 12px 30px !important;
-    background-color: #3734A9 !important;
+    background-color: $brand-color !important;
 }
 
 .MuiButton-text{
@@ -270,7 +280,7 @@ footer .MuiButton-contained{
 }
 
 .bg-blue{
-    background-color: #3734A9;
+    background-color: $brand-color;
 }
 
 .position-relative{
@@ -353,6 +363,11 @@ font-family: 'Manrope';
     background-repeat: no-repeat;
 }
 
+.h-790{
+    height: 790px;
+}
+
+
 .blob{
     position: absolute;
     content: '';
@@ -426,7 +441,7 @@ font-family: 'Manrope';
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
-    box-shadow: 0 0 0 0 rgb(30 190 56 / 60%);
+    box-shadow: 0 0 0 0 RGB(30 190 56 / 60%);
 	-webkit-animation: ripple 3s infinite;
 	-moz-animation: ripple 3s infinite;
 	-ms-animation: ripple 3s infinite;
@@ -559,7 +574,7 @@ background: unset !important;
 
   .payment__card{
     background: #FFFFFF;
-    box-shadow: 0px 100px 80px rgb(0 0 0 / 3%), 0px 64.8148px 46.8519px rgb(0 0 0 / 2%), 0px 38.5185px 25.4815px rgb(0 0 0 / 2%), 0px 20px 13px rgb(0 0 0 / 2%), 0px 8.14815px 6.51852px rgb(0 0 0 / 1%), 0px 1.85185px 3.14815px rgb(0 0 0 / 1%);
+    box-shadow: 0px 100px 80px RGB(0 0 0 / 3%), 0px 64.8148px 46.8519px RGB(0 0 0 / 2%), 0px 38.5185px 25.4815px RGB(0 0 0 / 2%), 0px 20px 13px RGB(0 0 0 / 2%), 0px 8.14815px 6.51852px RGB(0 0 0 / 1%), 0px 1.85185px 3.14815px RGB(0 0 0 / 1%);
     border-radius: 10px;
     padding: 10px 20px;
   }
@@ -995,7 +1010,7 @@ footer hr{
   padding: 55px 30px;
   height: 100%;
   display: block;
-  background-color: white;
+  background-color: $brand-color;
   z-index: 1020;
   -webkit-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
   -moz-transition: all 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -1020,21 +1035,21 @@ footer hr{
   right: 0;
 }
 
+.slide-bar li a{
+    color: white !important;
+}
+
 .body-overlay {
-  backdrop-filter:  blur(10px);
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 9999999;
-  left: 0;
-  opacity: 0;
-  display: none;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    left: 0;
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease-out 0s;
+    background: rgba(0,0,0,0.8);
 }
 
 .body-overlay.active {
@@ -1083,22 +1098,26 @@ footer hr{
     position: absolute !important;
     top: 13px;
     right: 0;
-    z-index: 1 !important;
+    z-index: 9 !important;
 }
 
 
 .dark section, .dark .bgGradient, .dark .text-lgray{
     background: black !important;
-
+    transition: 200ms ease-out;
     color: white !important;
 }
 
 .dark .MuiButton-contained {
-    background-color: #3734A9 !important;
+    background-color: $brand-color !important;
 }
 
 .dark .nav-link, .dark .navbar-brand, .dark button {
     color: white !important;
+}
+
+.dark .sticktop .navbar button{
+    color: initial !important;
 }
 
 .dark .bgGray p, .dark h4{
@@ -1137,6 +1156,51 @@ footer hr{
     background: #FF7F5C!important;
 }
 
+.dark .bg-blue{
+    background-color: $brand-color !important;
+}
+
+.dark .discoverSection{
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+/*scroll to top*/
+
+.scrolltop {
+    transform: scale(0);
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    cursor: pointer;
+    transition: 200ms ease-out;
+}
+
+.gotop.scrolltop{
+    transform: scale(1);
+    animation: scrollease 600ms ease-out;
+    background: $brand-color;
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scrollease{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
 /*responsive starts now*/
 
 @media(min-width:1500px){
@@ -1145,7 +1209,19 @@ footer hr{
     }
 }
 
-@media(max-width:600px){
+@media(max-width:1200px){
+    .navbar button{
+        width: initial;
+    }
+
+    .MuiSwitch-root {
+        right: 12%;
+        top: 9px;
+    }
+
+}
+
+@media(max-width:768px){
     .feature__Cards, .blog__Cards  {
         grid-template-columns: repeat(1,1fr);
     }
@@ -1159,9 +1235,176 @@ footer hr{
     }
 
     .trackRight .bgGray{
-        transform: initial;
+        transform: initial !important;
         opacity: 0;
     }
-    
 
+    .discoverContainer{
+        transform: initial !important;
+        margin-top: 40px !important;
+    }
+
+    .track h3 {
+        transform: initial !important;
+    }
+
+    .bgGradient {
+        padding-top: 100px;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-size: 30px !important;
+        line-height: 1.5;
+    }
+
+    .flex-column-sm, .testimonialBox{
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    button{
+        width: 100%;
+    }
+
+
+    .play-now{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .mainBanner__right img {
+    width: 100%;
+    margin-top: 0;
+    }
+
+    .mainBanner__right{
+        height: 100%;
+    }
+
+
+    .trackRight{
+        margin-top: 50px;
+    }
+    
+    .pt-10{
+        padding-top: 0;
+    }
+
+    .payment__left{
+        padding: 20px;
+    }
+
+    .payment__left .payment__card:nth-child(2), .payment__left .payment__card:nth-child(3) {
+        opacity: 1 !important;
+        transform: initial !important;
+        margin-left: 0;
+    }
+
+    .payment__Section{
+        padding-top: 40px;
+    }
+
+    .pl-100{
+        padding-left: 15px;
+    }
+
+    .featurebg {
+        padding: 50px 0;
+    }
+
+    .py-150{
+        padding: 50px 0;
+    }
+
+    .testimonialBox {
+        flex-direction: column;
+    }
+
+    .ms-4{
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    .testimonialBox::after {
+        top: -20px;
+        left: 17px;
+    }
+
+    .object-cover {
+        object-fit: cover;
+        margin-top: 40px;
+        width: 100% !important;
+        height: 300px;
+    }
+
+    p{
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+    section{
+        padding-top: 40px !important;
+    }
+
+    .ps-5 {
+        padding-left: 15px!important;
+        padding-top: 30px;
+    }
+
+    .ps-5 .row{
+        gap: 40px;
+    }
+
+    .h-100 {
+        height: initial !important; 
+    }
+
+    .faqSection::after {
+        width: 100px;
+        height: 100px;
+        top: 25px;
+        right: 0%;
+    }
+
+    .faqMail .MuiButton-root {
+        position: initial;
+        left: inherit;
+        transform: initial;
+        margin-top: 30px;
+    }
+
+    .discoverSection button{
+        width: fit-content;
+    }
+
+    .social__Icons  img{
+        width: 30px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    .featurebg {
+
+        margin-top: 40px;
+    }
+
+    .saveSection .payment__Section{
+        padding-top: 0;
+    }
+
+    .faqMail {
+        margin-top: 40px;
+    }
+
+    .discoverSection .bg-blue::before,   .discoverSection .h3::before, .discoverSection .bg-blue::after, .discoverContainer::after, .discoverContainer::before {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+}
+
+@media(max-width:1400px){
+    .statsSection .col-lg-2::after {
+        display: none;
+    }
 }
