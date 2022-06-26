@@ -366,6 +366,105 @@ font-family: 'Manrope';
     border-radius: 999px !important;
 }
 
+
+.play-now {
+	position: relative;
+	display: block;
+	z-index: 9;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+    margin-left: 40px;
+}
+
+.play-now .icon{
+	position: relative;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	line-height: 80px;
+	background-color: #22D497;
+	color: #ffffff;
+	z-index: 1;
+	font-size: 22px;
+	display: block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0px 10px 0 rgba(255, 255, 255, .3);
+	-moz-box-shadow: 0 0px 10px 0 rgba(255, 255, 255, .3);
+	-ms-box-shadow: 0 0px 10px 0 rgba(255, 255, 255, .3);
+	-o-box-shadow: 0 0px 10px 0 rgba(255, 255, 255, .3);
+	box-shadow: 0  0px 10px 0 rgba(255, 255, 255, .3);
+	-webkit-transform-origin:center; 
+	-moz-transform-origin:center; 
+	-ms-transform-origin:center; 
+	-o-transform-origin:center; 
+	transform-origin:center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    padding-left: 7px;
+}
+
+.play-now .ripple,
+.play-now .ripple:before,
+.play-now .ripple:after {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+    box-shadow: 0 0 0 0 rgb(30 190 56 / 60%);
+	-webkit-animation: ripple 3s infinite;
+	-moz-animation: ripple 3s infinite;
+	-ms-animation: ripple 3s infinite;
+	-o-animation: ripple 3s infinite;
+	animation: ripple 3s infinite;
+}
+
+.play-now .ripple:before {
+	-webkit-animation-delay: .9s;
+	-moz-animation-delay: .9s;
+	-ms-animation-delay: .9s;
+	-o-animation-delay: .9s;
+	animation-delay: .9s;
+	content: "";
+	position: absolute;
+}
+
+.play-now .ripple:after {
+	-webkit-animation-delay: .6s;
+	-moz-animation-delay: .6s;
+	-ms-animation-delay: .6s;
+	-o-animation-delay: .6s;
+	animation-delay: .6s;
+	content: "";
+	position: absolute;
+}
+
+@-webkit-keyframes ripple {
+	70% {box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);}
+	100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}
+
+@keyframes ripple {
+	70% {box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);}
+	100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}
+
+
 /*Main Banner ends*/
 
 
@@ -973,6 +1072,11 @@ footer hr{
     height: 500px;
 }
 
+.discoverContainer{
+    transform: scale(1.6);
+    margin-top: 50px;
+}
+
 /*Toggle Switc*/
 
 .MuiSwitch-root{
@@ -982,9 +1086,10 @@ footer hr{
     z-index: 1 !important;
 }
 
+
 .dark section, .dark .bgGradient, .dark .text-lgray{
     background: black !important;
-    transition: 200ms ease-out;
+
     color: white !important;
 }
 
@@ -1017,13 +1122,22 @@ footer hr{
     margin-top: 0;
 }
 
+.dark .testimonialSection {
+    padding-top: 0;
+}
+
+
 .dark .sticktop .nav-link, 
 .dark .sticktop .navbar-brand, .dark .sticktop .MuiButton-text{
     background: unset !important;
     color: black !important;
 }
 
-/*responsive starts*/
+.dark .discoverSection button{
+    background: #FF7F5C!important;
+}
+
+/*responsive starts now*/
 
 @media(min-width:1500px){
     .MuiSwitch-root {

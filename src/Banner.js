@@ -38,6 +38,8 @@ function Banner()
                 </p>
                 <div className="d-flex align-items-center mt-5">
                 <Button variant="contained" >Get Started</Button>
+                <a href="#" className="play-now d-flex align-items-center"><i className="fa fa-play icon" aria-hidden="true"></i><span className="ripple"></span>  See How It Works</a>             
+
                 </div>
                 <div className="d-flex align-items-center mt-5">
                   <p>

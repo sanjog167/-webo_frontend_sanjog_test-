@@ -16,9 +16,9 @@ function Track() {
                    scrub: true,
             }
         })
-                  .to(".track h3", 7, {
+                  .to(".track h3", 1, {
               scale:1,
-              
+               
             })
 
       }, []);
@@ -34,7 +34,7 @@ function Track() {
                    scrub: true,
             }
         })
-                  .to(".trackLeft p", 7, {
+                  .to(".trackLeft p", 1, {
               opacity:1,
               
             })
@@ -48,12 +48,12 @@ function Track() {
         gsap.timeline({
             scrollTrigger: {
                 trigger: ".track",
-                start: "top bottom",
+                start: "top bottom", 
                 end: "bottom",
                    scrub: true,
             }
         })
-                  .to(".trackRight .bgGray", 1, {
+                  .to(".trackRight .bgGray", 1,  {
                     translateX:20, opacity:1,
               
             })
