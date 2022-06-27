@@ -111,6 +111,9 @@ function Navbar() {
 
           </ul>
         </nav>
+        <div className="close_sideBar position-absolute" onClick={toggleBar}>
+          <i className="fa fa-cross"></i>
+        </div>
       </aside>
       <div className={"body-overlay " + (SwitchToggle ? "active" : "")} onClick={toggleBar}></div>
     </nav>
