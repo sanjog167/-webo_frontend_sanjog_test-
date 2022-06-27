@@ -2,7 +2,7 @@ import React from 'react'
 
 function FeatureData({image,title,description}) {
   return (
-    <div className={"Card1 text-start " + ( description == null ? 'd-flex align-items-center' : '' )}>
+    <div className={"Card1 text-start elementHover " + ( description == null ? 'd-flex align-items-center' : '' )}>
      {
         image ? <img src={image} alt=""></img> : ''
      }   

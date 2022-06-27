@@ -1,5 +1,8 @@
 import React, {useRef,useEffect} from 'react'
 import avatar1 from "../src/Images/avatar1.png";
+import avatar2 from "../src/Images/avatar2.png";
+import avatar3 from "../src/Images/avatar3.png";
+import avatar4 from "../src/Images/avatar4.png";
 import paytick from "../src/Images/paytick.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -57,21 +60,21 @@ function Payment() {
                 </div>
               </div>
               <div className="payment__card d-flex mb-4">
-                <img src={avatar1} alt="avatar" className="w-40 h-40" />
+                <img src={avatar2} alt="avatar" className="w-40 h-40" />
                 <div className="payment__cardDescription ms-3">
                   <p className="mb-0">+ $28,900</p>
                   <p className="mb-0">Received from Michael V</p>
                 </div>
               </div>
               <div className="payment__card d-flex mb-4">
-                <img src={avatar1} alt="avatar" className="w-40 h-40" />
+                <img src={avatar3} alt="avatar" className="w-40 h-40" />
                 <div className="payment__cardDescription ms-3">
                   <p className="mb-0">+ $28,900</p>
                   <p className="mb-0">Received from Michael V</p>
                 </div>
               </div>
               <div className="payment__card d-flex">
-                <img src={avatar1} alt="avatar" className="w-40 h-40" />
+                <img src={avatar4} alt="avatar" className="w-40 h-40" />
                 <div className="payment__cardDescription ms-3">
                   <p className="mb-0">+ $28,900</p>
                   <p className="mb-0">Received from Michael V</p>

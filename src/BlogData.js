@@ -3,8 +3,8 @@ import arrowright from "../src/Images/arrowright.png";
 
 function BlogData({image,title,link,subtitle}) {
   return (
-    <div className='blogCard'>
-        <div className='blogCard__content'>
+    <div className='blogCard elementHover'>
+        <div className='blogCard__content p-3'>
         <p>{subtitle}</p>
         <h4 className='mt-2 mb-5 w-300 fs-26 fw-800 h-100'>{title}</h4>
         {

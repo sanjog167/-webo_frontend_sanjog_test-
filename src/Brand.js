@@ -7,6 +7,14 @@ import SwiperCore, { Autoplay } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
+import b1 from "../src/Images/b11.png"
+import b2 from "../src/Images/b12.png"
+import b3 from "../src/Images/b13.png"
+import b4 from "../src/Images/b14.png"
+import b5 from "../src/Images/b15.png"
+import b6 from "../src/Images/b16.png"
+import b7 from "../src/Images/b17.png"
+import BrandData from "./BrandData";
 
 function Brand() {
   SwiperCore.use([Autoplay]);
@@ -35,15 +43,37 @@ function Brand() {
         }}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+        <BrandData image={b1} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <BrandData image={b2} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <BrandData image={b3} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <BrandData image={b4} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <BrandData image={b5} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <BrandData image={b6} />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <BrandData image={b7} />
+        </SwiperSlide>
+         
+  
+   
+
       </Swiper>
     </div>
   

@@ -35,25 +35,25 @@ function Navbar() {
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0 ">
             <li className="nav-item mr-26">
               <a
-                className="nav-link active text-black"
+                className="nav-link position-relative active text-black"
                 aria-current="page"
                 href="#"
               >
-                Product
+                Product <i className="fa fa-chevron-down fw-normal ms-2"></i>
               </a>
             </li>
             <li className="nav-item mr-26">
-              <a className="nav-link text-black" href="#">
-                Template
+              <a className="nav-link position-relative text-black" href="#">
+                Template  <i className="fa fa-chevron-down fw-normal ms-2"></i>
               </a>
             </li>
             <li className="nav-item mr-26">
-              <a className="nav-link text-black" href="#">
+              <a className="nav-link position-relative text-black" href="#">
                 Blog
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-black" href="#">
+              <a className="nav-link position-relative text-black" href="#">
                 Pricing
               </a>
             </li>

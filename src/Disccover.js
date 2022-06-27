@@ -27,7 +27,7 @@ function Disccover() {
 
   return (
     <section className='discoverSection' >
-        <div className='container position-relative discoverContainer overflow-hidden' ref={ref} >
+        <div className='container position-relative discoverContainer overflow-hidden px-xs-0' ref={ref} >
             <div className='bg-blue text-white py-150 border-20 position-relative'>
                 <h3 className='w-760 m-auto text-center mb-5 position-relative'>Discover a better way to manage spendings</h3>
                 <Button variant="contained" className='btn-orange'>Get Started</Button>
